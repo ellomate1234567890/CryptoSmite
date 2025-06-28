@@ -257,8 +257,6 @@ echo "Cleaning up"
 cleanup
 
 vpd -i RW_VPD -s check_enrollment=0 || : # this doesn't get set automatically
-crossystem disable_dev_request=1 || :
-crossystem disable_dev_request=1 # grunt weirdness
 echo "SMITED SUCCESSFULLY!"
 echo ""
 echo "Exploit and original POC created by Writable (unretained)"
